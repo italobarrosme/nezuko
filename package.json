@@ -12,6 +12,15 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },
+  "lint-staged": {
+    "src/**/*.+(ts|tsx)": [
+      "eslint --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ],
+    "*.js": "eslint --cache --fix"
+  },
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.5",
     "@types/node": "18.11.13",
