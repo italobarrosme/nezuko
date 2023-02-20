@@ -1,1 +1,1 @@
-export { InputSearch, type InputSearchProps } from './InputSearch';
+export { InputSearch, type InputSearchProps } from './InputSearch'

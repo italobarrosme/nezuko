@@ -18,47 +18,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".src/",
+    "baseUrl": ".",
     "paths": {
-      "@/constants/*": [
-        "constants/*"
-      ],
-      "@/pages/*": [
-        "pages/*"
-      ],
-      "@/hooks/*": [
-        "hooks/*"
-      ],
-      "@/types/*": [
-        "types/*"
-      ],
-      "@/services/*": [
-        "services/*"
-      ],
-      "@/styles/*": [
-        "styles/*"
-      ],
-      "@/layouts/*": [
-        "layouts/*"
-      ],
-      "@/useCases/*": [
-        "useCases/*"
-      ],
-      "@/useComponents/*": [
-        "useComponents/*"
-      ],
-      "@/usePieces/*": [
-        "usePieces/*"
-      ],
-      "@/store/*": [
-        "store/*"
-      ],
-      "@/ui/*": [
-        "ui/*"
-      ],
-      "@/utils/*": [
-        "utils/*"
-      ],
+      "@/*": [
+        "src/*"
+      ]
     }
   },
   "include": [

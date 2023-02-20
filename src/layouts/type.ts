@@ -1,4 +1,4 @@
 export type Component = {
-  title: string,
-  children: JSX.Element,
-};
+  title: string
+  children: JSX.Element
+}

@@ -2,11 +2,11 @@ import https from 'https'
 import axios, {
   AxiosRequestConfig,
   AxiosRequestHeaders,
-  AxiosResponse,
+  AxiosResponse
 } from 'axios'
 
 const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
+  rejectUnauthorized: false
 })
 axios.defaults.httpsAgent = httpsAgent
 
@@ -36,16 +36,14 @@ export function fetch({
   path,
   ...data
 }: FetchParams): Promise<AxiosResponse> {
-
-
   return axiosInstance({
     ...data,
     headers: {
-      Cookie: headers?.Cookie,
+      Cookie: headers?.Cookie
     },
     withCredentials,
     method,
     baseURL: url,
-    url: path,
+    url: path
   })
 }

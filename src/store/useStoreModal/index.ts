@@ -15,15 +15,15 @@ export const useStoreModal = create<StoreModalProps>((set) => ({
   store: {
     modal: {
       role: '',
-      isOpen: false,
-    },
+      isOpen: false
+    }
   },
   // Actions
   setModal: (modal: StoreModalProps['store']['modal']) =>
     set((state) => ({
       store: {
         ...state.store,
-        modal,
-      },
-    })),
+        modal
+      }
+    }))
 }))

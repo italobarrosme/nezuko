@@ -1,7 +1,7 @@
 import create from 'zustand'
 
 type StoreLoading = {
-  store:  {
+  store: {
     isLoading: boolean
   }
   setLoading: (isLoading: boolean) => void
@@ -10,27 +10,25 @@ type StoreLoading = {
 export const useStoreLoading = create<StoreLoading>((set) => ({
   // State
   store: {
-    isLoading: false,
+    isLoading: false
   },
 
   // Actions
-  setLoading: (isLoading: boolean) =>
-  {
+  setLoading: (isLoading: boolean) => {
     if (!isLoading) {
       setTimeout(() => {
-        set((state) => ({
+        set(() => ({
           store: {
-            isLoading: false,
-          },
+            isLoading: false
+          }
         }))
       }, 1000)
     } else {
-      set((state) => ({
+      set(() => ({
         store: {
-          isLoading: true,
-        },
+          isLoading: true
+        }
       }))
     }
   }
-
 }))

@@ -1,22 +1,17 @@
-import { NextRequest, NextResponse,  } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
-
-export default function middleware(req: NextRequest, res: NextResponse) {
+export default function middleware(req: NextRequest) {
   const cookie = req?.cookies.get('B1SESSION')
 
   const { pathname } = req.nextUrl
 
   if (!cookie && pathname !== '/auth') {
-    
     req.nextUrl.pathname = '/auth'
     return NextResponse.redirect(req.nextUrl)
   }
 
-  
-
   return NextResponse.next()
 }
 export const config = {
-  matcher: ['/purchase-request/:path*'],
+  matcher: ['/purchase-request/:path*']
 }
-
