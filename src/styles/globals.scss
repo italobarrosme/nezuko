@@ -1,9 +1,9 @@
 html,
 body {
+  @apply bg-brand-light;
   padding: 0;
   margin: 0;
   overflow: hidden;
-  @apply bg-brand-light;
 }
 
 a {
@@ -17,7 +17,6 @@ a {
 
 ::-webkit-scrollbar {
   width: 10px;
-
 }
 
 /* Track */

@@ -1,8 +1,7 @@
-import Head from 'next/head';
-import { Component } from './type';
+import Head from 'next/head'
+import { Component } from './type'
 
 const AuthtLayout = ({ children }: Component) => {
-
   return (
     <div className="font-mono">
       <Head>
@@ -10,12 +9,11 @@ const AuthtLayout = ({ children }: Component) => {
         <meta name="description" content="Auth layout" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='h-screen flex justify-center items-center bg-brand-primary'>
+      <main className="flex h-screen items-center justify-center bg-brand-primary">
         {children}
       </main>
-
     </div>
   )
 }
 
-export default AuthtLayout;
+export default AuthtLayout

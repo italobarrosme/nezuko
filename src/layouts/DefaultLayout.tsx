@@ -1,22 +1,19 @@
-import Head from 'next/head';
-import { Component } from './type';
-
+import Head from 'next/head'
+import { Component } from './type'
 
 const DefaultLayout = ({ children, title }: Component) => {
-
   return (
-    <div className="font-mono w-screen flex">
+    <div className="flex w-screen font-mono">
       <Head>
         <title>{title}</title>
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='overflow-auto h-screen justify-center w-full items-center py-20 px-6'>
+      <main className="h-screen w-full items-center justify-center overflow-auto px-6 py-20">
         {children}
       </main>
-
     </div>
   )
 }
 
-export default DefaultLayout;
+export default DefaultLayout

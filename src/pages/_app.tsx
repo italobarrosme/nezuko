@@ -1,10 +1,10 @@
 import '@/styles/globals.scss'
 import '@/styles/main.scss'
 import type { AppProps } from 'next/app'
-import { SessionProvider } from "next-auth/react"
-import { ListToast } from '@/useComponents/ListToast'
+import { SessionProvider } from 'next-auth/react'
+import { ListToast } from '@/components/ListToast'
 import { useStoreListToast } from '@/store/useStoreListToast'
-import { Loading } from '@/useComponents/Loading'
+import { Loading } from '@/components/Loading'
 import { useStoreLoading } from '@/store/useStoreLoading'
 
 function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
@@ -19,7 +19,6 @@ function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
       </SessionProvider>
       {store.isLoading && <Loading />}
     </>
-
   )
 }
 

@@ -1,48 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content:[
-   './src/pages/**/*.{js,ts,jsx,tsx,,scss}', 
-   './src/useComponents/**/*.{js,ts,jsx,tsx,scss}', 
-   './src/usePieces/**/*.{js,ts,jsx,tsx,scss}', 
-   './src/useCases/**/*.{js,ts,jsx,tsx,scss}',
-   './src/layouts/**/*.{js,ts,jsx,tsx,scss}'
-  ],
-    theme: {
-      container: {
-        maxWidth: '300%',
-      },
-      screens: {
-        sm: '480px',
-        md: '768px',
-        lg: '976px',
-        xl: '1440px',
-      },
-      fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-        mono: ['Fira Code'],
-      },
-      extend: {
-        spacing: {
-          '128': '32rem',
-          '144': '36rem',
-        },
-        borderRadius: {
-          '4xl': '2rem',
-        },
-        colors: {
-          brand: {
-            dark: '#0D0D0D',
-            light: '#fffef3',
-            primary: '#004b8f',
-            secondary: '#1068b9',
-            soft: '#2D3035',
-            accent: '#c92524',
-          },
-          transparent: 'transparent',
-        },
-        
-      }
+  content: ['./src/**/*.{js,ts,jsx,tsx,,scss}'],
+  theme: {
+    container: {
+      maxWidth: '300%'
     },
-  plugins: [],
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px'
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+      mono: ['Fira Code']
+    },
+    extend: {
+      spacing: {
+        128: '32rem',
+        144: '36rem'
+      },
+      borderRadius: {
+        '4xl': '2rem'
+      },
+      colors: {
+        brand: {
+          dark: '#0D0D0D',
+          light: '#fffef3',
+          primary: '#004b8f',
+          secondary: '#1068b9',
+          soft: '#2D3035',
+          accent: '#c92524'
+        },
+        transparent: 'transparent'
+      }
+    }
+  },
+  plugins: []
 }
