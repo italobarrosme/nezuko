@@ -17,9 +17,9 @@ export default NextAuth({
       credentials: {
         user: {
           label: 'user',
-          type: 'text'
+          type: 'text',
         },
-        pass: { label: 'Password', type: 'text' }
+        pass: { label: 'Password', type: 'text' },
       },
       async authorize(credentials) {
         const { user, pass } = credentials as credentialsProps
@@ -29,8 +29,8 @@ export default NextAuth({
           path: `${publicRuntimeConfig.NEXTAUTH_URL}/api/login`,
           data: {
             user,
-            pass
-          }
+            pass,
+          },
         })
 
         if (response.status === 200) {
@@ -38,13 +38,13 @@ export default NextAuth({
         }
 
         return response
-      }
-    })
+      },
+    }),
   ],
   secret: process.env.JWT_SECRET,
   pages: {
     signIn: '/auth',
-    error: '/auth'
+    error: '/auth',
   },
   callbacks: {
     async jwt({ token, user, account }: any) {
@@ -53,7 +53,7 @@ export default NextAuth({
           ...token,
           accessToken: user.SessionId,
           sessionTimeout: user.SessionTimeout,
-          version: user.Version
+          version: user.Version,
         }
       }
       return token
@@ -68,6 +68,6 @@ export default NextAuth({
     },
     async redirect({ baseUrl }: any) {
       return `${baseUrl}/api/auth/callback`
-    }
-  }
+    },
+  },
 })

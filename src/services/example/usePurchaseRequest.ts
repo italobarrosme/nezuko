@@ -11,7 +11,7 @@ export const getPurchaseRequests = async (
     params: {
       skip,
       orderby,
-      filter
-    }
+      filter,
+    },
   })
 }

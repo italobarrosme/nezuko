@@ -1,6 +1,6 @@
-import create from 'zustand'
-import { ListToastProps, PositionScreen } from '@/useComponents/ListToast'
-import { UnitToastProps } from '@/usePieces/Toast'
+import { create } from 'zustand'
+import { ListToastProps, PositionScreen } from '@/components/ListToast'
+import { UnitToastProps } from '@/pieces/Toast'
 
 type StoreListToast = {
   data: ListToastProps
@@ -8,24 +8,24 @@ type StoreListToast = {
   removeToast: (toast: UnitToastProps) => void
 }
 
-export const useStoreListToast = create<StoreListToast>((set) => ({
+export const storeListToast = create<StoreListToast>((set) => ({
   data: {
     list: [],
-    position: 'top-right'
+    position: 'top-right',
   },
   addToast: (toast: UnitToastProps, position?: PositionScreen) =>
     set((state) => ({
       data: {
         ...state.data,
         list: [...state.data.list, toast],
-        position: position ? position : state.data.position
-      }
+        position: position ? position : state.data.position,
+      },
     })),
   removeToast: (toast: UnitToastProps) =>
     set((state) => ({
       data: {
         ...state.data,
-        list: state.data.list.filter((item) => item !== toast)
-      }
-    }))
+        list: state.data.list.filter((item) => item !== toast),
+      },
+    })),
 }))

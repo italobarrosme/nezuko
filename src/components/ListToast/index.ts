@@ -1,5 +1,5 @@
 export {
   ListToast,
   type ListToastProps,
-  type PositionScreen
+  type PositionScreen,
 } from './ListToast'

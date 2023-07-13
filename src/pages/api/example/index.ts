@@ -17,8 +17,8 @@ export default function handler(
     await fetch({
       path,
       headers: {
-        Cookie: `B1SESSION=${req.cookies['B1SESSION']}`
-      }
+        Cookie: `B1SESSION=${req.cookies['B1SESSION']}`,
+      },
     })
       .then((response: any) => {
         return res.status(200).json(response?.data)

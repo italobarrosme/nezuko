@@ -1,7 +1,7 @@
 import clxs from 'clsx'
 import style from './ListToast.module.scss'
 import { useEffect, MouseEvent } from 'react'
-import { useStoreListToast } from '@/store/useStoreListToast'
+import { storeListToast } from '@/store/storeListToast'
 
 import { Toast, UnitToastProps } from '@/pieces/Toast/'
 
@@ -17,7 +17,7 @@ export type ListToastProps = {
 }
 
 export const ListToast = ({ list, position }: ListToastProps) => {
-  const { removeToast } = useStoreListToast()
+  const { removeToast } = storeListToast()
 
   useEffect(() => {
     list.filter((item) => {

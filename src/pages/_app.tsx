@@ -3,9 +3,9 @@ import '@/styles/main.scss'
 import type { AppProps } from 'next/app'
 import { SessionProvider } from 'next-auth/react'
 import { ListToast } from '@/components/ListToast'
-import { useStoreListToast } from '@/store/useStoreListToast'
+import { useStoreListToast } from '@/store/storeListToast'
 import { Loading } from '@/components/Loading'
-import { useStoreLoading } from '@/store/useStoreLoading'
+import { useStoreLoading } from '@/store/storeLoading'
 
 function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const { data } = useStoreListToast()

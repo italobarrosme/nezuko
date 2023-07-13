@@ -1,4 +1,4 @@
-import create from 'zustand'
+import { create } from 'zustand'
 
 export type StoreModalProps = {
   store: {
@@ -10,20 +10,20 @@ export type StoreModalProps = {
   setModal: (modal: StoreModalProps['store']['modal']) => void
 }
 
-export const useStoreModal = create<StoreModalProps>((set) => ({
+export const storeModal = create<StoreModalProps>((set) => ({
   // State
   store: {
     modal: {
       role: '',
-      isOpen: false
-    }
+      isOpen: false,
+    },
   },
   // Actions
   setModal: (modal: StoreModalProps['store']['modal']) =>
     set((state) => ({
       store: {
         ...state.store,
-        modal
-      }
-    }))
+        modal,
+      },
+    })),
 }))

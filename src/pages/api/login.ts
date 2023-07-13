@@ -13,8 +13,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         UserName: user,
         Password: pass,
         CompanyDB: 'SBOIPOGTESTE',
-        Language: 29
-      }
+        Language: 29,
+      },
     })
 
     return res.status(response.status).json(response.data)

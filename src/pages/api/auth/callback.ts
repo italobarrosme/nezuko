@@ -15,11 +15,11 @@ export default async function handler(
 
   if (session?.accessToken) {
     setCookie({ res }, 'B1SESSION', session.accessToken, {
-      path: '/'
+      path: '/',
     })
 
     setCookie({ res }, 'SESSION_TIMEOUT', session.sessionTimeout, {
-      path: '/'
+      path: '/',
     })
   }
 
