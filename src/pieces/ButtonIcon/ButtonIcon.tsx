@@ -13,7 +13,7 @@ export const ButtonIcon = ({
   label,
   icon,
   height = 24,
-  width = 24
+  width = 24,
 }: ButtonIconProps) => {
   return (
     <>

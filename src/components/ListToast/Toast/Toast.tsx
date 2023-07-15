@@ -16,7 +16,7 @@ const mapIcon = {
   success: 'akar-icons:check',
   error: 'eva:alert-circle-outline',
   warning: 'eva:alert-triangle-outline',
-  info: 'carbon:information'
+  info: 'carbon:information',
 }
 
 export const Toast = ({
@@ -24,7 +24,7 @@ export const Toast = ({
   message,
   duration,
   title,
-  closeToast
+  closeToast,
 }: UnitToastProps) => {
   return (
     <li
@@ -32,7 +32,7 @@ export const Toast = ({
       style={{
         animationDuration: `${duration + 300}ms`,
         animationTimingFunction: 'ease-in-out',
-        animationFillMode: 'forwards'
+        animationFillMode: 'forwards',
       }}
       role="status"
     >

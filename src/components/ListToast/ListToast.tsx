@@ -1,9 +1,9 @@
 import clxs from 'clsx'
 import style from './ListToast.module.scss'
 import { useEffect, MouseEvent } from 'react'
-import { storeListToast } from '@/store/storeListToast'
+import { storeListToast } from '@/components/ListToast/store/storeListToast'
 
-import { Toast, UnitToastProps } from '@/pieces/Toast/'
+import { Toast, UnitToastProps } from '@/components/ListToast/Toast'
 
 export type PositionScreen =
   | 'top-right'

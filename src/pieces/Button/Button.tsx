@@ -1,5 +1,5 @@
+import { cn } from '@/utils'
 import { Icon } from '@iconify/react'
-import clsx from 'clsx'
 import { ButtonHTMLAttributes } from 'react'
 
 export type ButtonProps = {
@@ -14,12 +14,12 @@ export const Button = ({
   label,
   className,
   type,
-  icon = ''
+  icon = '',
 }: ButtonProps) => {
   return (
     <button
       type={type}
-      className={clsx(
+      className={cn(
         className,
         'flex items-center gap-4 whitespace-nowrap rounded bg-brand-primary px-4 py-2 font-bold text-white hover:bg-brand-secondary'
       )}

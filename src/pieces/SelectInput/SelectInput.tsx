@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { cn } from '@/utils'
 import { SelectHTMLAttributes } from 'react'
 export type SelectInputProps = {
   label: string
@@ -13,19 +13,19 @@ export const SelectInput = ({
   value,
   onChange,
   disabled,
-  className
+  className,
 }: SelectInputProps) => {
   return (
-    <div className={clsx('flex flex-col gap-2')}>
+    <div className={cn('flex flex-col gap-2')}>
       <label htmlFor={name} className="text-sm font-medium">
         {label}
       </label>
       <select
         id={name}
         name={name}
-        className={clsx(
-          className,
-          'border-1 h-9 w-80 rounded-md border-brand-primary p-2 text-brand-dark'
+        className={cn(
+          'border-1 h-9 w-80 rounded-md border-brand-primary p-2 text-brand-dark',
+          className
         )}
         onChange={onChange}
         value={value}
