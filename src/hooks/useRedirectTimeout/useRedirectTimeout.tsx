@@ -8,5 +8,5 @@ export const useRedirectTimeout = (timeout: number, redirectPath: string) => {
     setTimeout(() => {
       router.push(redirectPath)
     }, timeout)
-  }, [])
+  }, [redirectPath, router, timeout])
 }

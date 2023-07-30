@@ -14,7 +14,7 @@ export const Pagination = ({
   totalPages,
   onChangePage,
   isNextPage,
-  isPreviousPage
+  isPreviousPage,
 }: PaginationProps) => {
   const [page, setPage] = useState(currentPage)
 
@@ -32,7 +32,7 @@ export const Pagination = ({
 
   useEffect(() => {
     onChangePage(page)
-  }, [page])
+  }, [page, onChangePage])
 
   useEffect(() => {
     setPage(currentPage)

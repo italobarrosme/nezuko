@@ -1,5 +1,5 @@
+import { cn } from '@/utils'
 import { Icon } from '@iconify/react'
-import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 
 type navItems = {
@@ -28,11 +28,12 @@ export const Navbar = ({ menu, className, scrollPageY = 0 }: NavbarProps) => {
   return (
     <>
       <nav
-        className={clsx(
+        className={cn(
           'duration-500 ease-in',
           !navbar
             ? 'absolute right-0 top-0 z-30 h-11 w-[80%] rounded-l-full bg-brand-primary opacity-0'
-            : 'absolute right-0 top-0 z-30 h-11 w-[80%] rounded-l-full bg-brand-primary'
+            : 'absolute right-0 top-0 z-30 h-11 w-[80%] rounded-l-full bg-brand-primary',
+          className
         )}
       >
         <ul className="flex flex-row-reverse px-4">
