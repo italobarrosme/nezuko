@@ -1,9 +1,11 @@
-import clxs from 'clsx'
+'use client'
+
 import style from './ListToast.module.scss'
 import { useEffect, MouseEvent } from 'react'
 import { storeListToast } from '@/components/ListToast/store/storeListToast'
 
 import { Toast, UnitToastProps } from '@/components/ListToast/Toast'
+import { cn } from '@/utils'
 
 export type PositionScreen =
   | 'top-right'
@@ -42,7 +44,7 @@ export const ListToast = ({ list, position }: ListToastProps) => {
 
   return (
     <>
-      <ul className={clxs(style.toastContainer, style[position])} role="list">
+      <ul className={cn(style.toastContainer, style[position])} role="list">
         {list.map((toast, index) => (
           <Toast
             key={index}
