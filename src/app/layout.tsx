@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { ReactNode } from 'react'
 import { NextAuthProvider } from '@/providers/auth'
 import { ToastProvider } from '@/providers/toast'
-import { NavAuth } from './modules/Authentication/template'
+import { NavAuth } from '@/modules/Authentication/template'
 
 type Props = {
   children?: ReactNode

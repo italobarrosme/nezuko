@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ButtonAuth } from '../../app/modules/Authentication/components/ButtonAuth'
+import { ButtonAuth } from '@/modules/Authentication/components/ButtonAuth'
 import Link from 'next/link'
 
 type Menu = {
