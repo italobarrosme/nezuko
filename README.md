@@ -1,7 +1,6 @@
 # NEXTJS Boilerplate
 
-## Date of the last version.
-07-08-2023
+
 
 ## Instructions for installing the boilerplate.
 ```
@@ -93,5 +92,8 @@ Jest tests are implemented using @testing-library.
 - Image permissions are set up, for example, for Google authentication.
 
 - usehook-ts is also installed.
+
+
+### Date of the last version. ```07-08-2023```
 
 
