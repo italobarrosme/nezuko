@@ -5,11 +5,14 @@ export default function middleware(req: NextRequest) {
 
   const { pathname } = req.nextUrl
 
-  // Example of redirecting to /auth if the cookie is not set
-  if (!cookie && pathname !== '/auth') {
-    req.nextUrl.pathname = '/auth'
+  // Example of redirecting to / if the cookie is not set
+  if (!cookie && pathname !== '/') {
+    req.nextUrl.pathname = '/'
     return NextResponse.redirect(req.nextUrl)
   }
 
   return NextResponse.next()
+}
+export const config = {
+  matcher: ['/dashboard/:path*'],
 }
