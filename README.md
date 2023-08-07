@@ -24,8 +24,8 @@
 ## What does the project have?
 
 - For tests Jest are implemented using @testing-library
-- For storage, zustend is used, with the "ListToast" component as an example of usage.
-- For Auth Nextauth, provider google like example
+- For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
+- For Auth [Nextauth](https://next-auth.js.org/), provider google like example
 - For cookies using Nookies
 - Prettier eslint and lintstaged for organization code
 - fetch api using axios like gateway
@@ -40,7 +40,7 @@ Jest tests are implemented using @testing-library.
 - Image permissions are set up, for example, for Google authentication.
 
 - [usehook-ts](https://usehooks-ts.com/) is also installed.
-
+- For visual designer using [tailwind](https://tailwindcss.com/docs/width)
 Tailwind config has been implemented with this preset:
 ```
 /** @type {import('tailwindcss').Config} */
@@ -88,6 +88,6 @@ Run
 npm run dev
 ```
 
-### Date of the last version. ```07-08-2023```
-
+### Date of the last version. 
+``` 07-08-2023 ```
 
