@@ -1,18 +1,5 @@
 # NEXTJS Boilerplate
 
-## Instructions for installing the boilerplate.
-```
-npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
-```
-Install
-```
-npm install
-```
-Run
-```
-npm run dev
-```
-
 ## How is the project structured?
 
 ### The project uses Next.js version 13.4.8 and the App Router.
@@ -86,6 +73,19 @@ module.exports = {
     },
   },
 }
+```
+
+## Instructions for installing the boilerplate.
+```
+npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
+```
+Install
+```
+npm install
+```
+Run
+```
+npm run dev
 ```
 
 ### Date of the last version. ```07-08-2023```
