@@ -1,24 +1,5 @@
 # NEXTJS Boilerplate
 
-
-
-## Instructions for installing the boilerplate.
-```
-npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
-```
-Install
-```
-npm install
-```
-Init husky
-```
-npm run prepare
-```
-Run
-```
-npm run dev
-```
-
 ## How is the project structured?
 
 ### The project uses Next.js version 13.4.8 and the App Router.
@@ -40,6 +21,26 @@ npm run dev
 - "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging
 - "middleware": Next.js file for routing and auxiliary functions, comes with an example
 
+## What does the project have?
+
+- For tests Jest are implemented using @testing-library
+- For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
+- For Auth [Nextauth](https://next-auth.js.org/), provider google like example
+- For cookies using Nookies
+- Prettier eslint and lintstaged for organization code
+- fetch api using axios like gateway
+
+- Husky has also been implemented for:
+Commitlint
+Pre-commit with lint-staged and Prettier
+Pre-push running lint-staged and tests
+Jest tests are implemented using @testing-library.
+
+- The next-config includes PWA configurations.
+- Image permissions are set up, for example, for Google authentication.
+
+- [usehook-ts](https://usehooks-ts.com/) is also installed.
+- For visual designer using [tailwind](https://tailwindcss.com/docs/width)
 Tailwind config has been implemented with this preset:
 ```
 /** @type {import('tailwindcss').Config} */
@@ -73,27 +74,20 @@ module.exports = {
   },
 }
 ```
-## What does the project have?
 
-- For tests Jest are implemented using @testing-library
-- For storage, zustend is used, with the "ListToast" component as an example of usage.
-- For Auth Nextauth, provider google like example
-- For cookies using Nookies
-- Prettier eslint and lintstaged for organization code
-- fetch api using axios like gateway
+## Instructions for installing the boilerplate.
+```
+npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
+```
+Install
+```
+npm install
+```
+Run
+```
+npm run dev
+```
 
-- Husky has also been implemented for:
-Commitlint
-Pre-commit with lint-staged and Prettier
-Pre-push running lint-staged and tests
-Jest tests are implemented using @testing-library.
-
-- The next-config includes PWA configurations.
-- Image permissions are set up, for example, for Google authentication.
-
-- usehook-ts is also installed.
-
-
-### Date of the last version. ```07-08-2023```
-
+### Date of the last version. 
+``` 07-08-2023 ```
 
