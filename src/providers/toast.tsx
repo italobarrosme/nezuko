@@ -1,6 +1,6 @@
 'use client'
 
-import { ListToast, storeListToast } from '@/components/ListToast'
+import { ListToast, storeListToast } from '@/shared/components/ListToast'
 import { ReactNode } from 'react'
 
 export const ToastProvider = ({ children }: { children: ReactNode }) => {

@@ -1,6 +1,6 @@
 import { create } from 'zustand'
-import { ListToastProps, PositionScreen } from '@/components/ListToast'
-import { UnitToastProps } from '@/components/ListToast/Toast'
+import { ListToastProps, PositionScreen } from '@/shared/components/ListToast'
+import { UnitToastProps } from '@/shared/components/ListToast/Toast'
 
 type StoreListToast = {
   data: ListToastProps

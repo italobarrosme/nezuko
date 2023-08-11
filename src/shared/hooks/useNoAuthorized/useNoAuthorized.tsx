@@ -1,6 +1,6 @@
 import { destroyCookie } from 'nookies'
 
-import { status } from '@/constants/index'
+import { status } from '@/shared/constants/index'
 
 export const useNoAuthorized = (statusEndPoint: number) => {
   if (status.statusError.includes(statusEndPoint)) {

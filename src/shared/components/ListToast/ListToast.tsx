@@ -2,9 +2,9 @@
 
 import style from './ListToast.module.scss'
 import { useEffect, MouseEvent } from 'react'
-import { storeListToast } from '@/components/ListToast/store/storeListToast'
+import { storeListToast } from '@/shared/components/ListToast/store/storeListToast'
 
-import { Toast, UnitToastProps } from '@/components/ListToast/Toast'
+import { Toast, UnitToastProps } from '@/shared/components/ListToast/Toast'
 import { cn } from '@/utils'
 
 export type PositionScreen =
