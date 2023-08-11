@@ -22,11 +22,9 @@ const NotFound: NextPage = () => {
               But dont worry, you can find plenty of other things on our
               homepage.
             </p>
-            <Link legacyBehavior href="/">
-              <a>
-                <Icon icon={'bi:arrow-left-circle'} />
-                Back to Home{' '}
-              </a>
+            <Link href="/">
+              <Icon icon={'bi:arrow-left-circle'} />
+              Back to Home{' '}
             </Link>
           </div>
         </div>

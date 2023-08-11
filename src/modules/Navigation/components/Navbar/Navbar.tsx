@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { ButtonAuth } from '@/modules/Authentication/components/ButtonAuth'
 import Link from 'next/link'
+import { ReactNode } from 'react'
 
 type Menu = {
   name: string
@@ -13,31 +13,20 @@ type Menu = {
 
 type NavbarProps = {
   logo: string
-  user: any
-  buttonAuthClick?: () => void
   menus: Menu[]
   isMenuOpen: boolean
+  children?: ReactNode
 }
 
-export const Navbar = ({
-  logo,
-  user,
-  buttonAuthClick,
-  menus,
-  isMenuOpen,
-}: NavbarProps) => {
+export const Navbar = ({ logo, menus, isMenuOpen, children }: NavbarProps) => {
   return (
     <nav className="relative flex h-20 items-center justify-between px-4 shadow-sm">
       <Link href="/">
         <Image src={logo} alt="logo" width={42} height={42} />
       </Link>
-      <ButtonAuth
-        data={user}
-        icon={isMenuOpen ? 'lucide:x' : 'quill:hamburger'}
-        onClick={buttonAuthClick}
-      />
+      {children}
       {isMenuOpen ? (
-        <ul className="absolute right-20 top-16 z-40 rounded-md border bg-brand-light p-2 shadow-xl">
+        <ul className="absolute right-20  top-16 z-40 rounded-md border bg-brand-light p-2 shadow-xl">
           {menus.map((menu, index) => (
             <li
               key={index}

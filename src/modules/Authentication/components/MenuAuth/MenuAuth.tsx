@@ -5,17 +5,17 @@ import { Icon } from '@iconify/react'
 import Image from 'next/image'
 import { ButtonHTMLAttributes } from 'react'
 
-type ButtonAuthProps = {
+type MenuAuthAuthProps = {
   icon?: string
   data: any
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const ButtonAuth = ({
+export const MenuAuth = ({
   icon = '',
   data,
   onClick,
   ...props
-}: ButtonAuthProps) => {
+}: MenuAuthAuthProps) => {
   return (
     <button
       onClick={onClick}
@@ -27,11 +27,11 @@ export const ButtonAuth = ({
       )}
       {...props}
     >
-      {data ? (
+      {data?.user ? (
         <>
           <Icon icon={icon} width={32} />
           <Image
-            src={data.image}
+            src={data.user?.image || ''}
             alt="image user"
             width={32}
             height={32}

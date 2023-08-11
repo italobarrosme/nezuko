@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { ReactNode } from 'react'
 import { NextAuthProvider } from '@/providers/auth'
 import { ToastProvider } from '@/providers/toast'
-import { NavAuth } from '@/modules/Authentication/template'
+import { Navigation } from '@/modules/Navigation'
 
 type Props = {
   children?: ReactNode
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Props) {
       <body>
         <NextAuthProvider>
           <ToastProvider>
-            <NavAuth />
+            <Navigation />
             {children}
           </ToastProvider>
         </NextAuthProvider>
