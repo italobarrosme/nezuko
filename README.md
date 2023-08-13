@@ -6,30 +6,13 @@
 <h3 align="center">NEXTJS Boilerplate Orangescreen</h3>
 ## 📝 Table of Contents
 
+- [What does have?](#doeshave)
 - [Structured](#structured)
 - [Getting Started](#getting_started)
 
-## How is the project structured? <a name = "structured"></a>
+## 📦 What does the project have? <a name="doeshave">
 
-### The project uses Next.js version 13.4.8 and the App Router.
-
-- "app/layout": Default layout that calls providers, global components like navbar
-- "app/loading": Default loading
-- "app/not-found": 404
-- "app/page": Homepage
-- "modules": Folder where project modules are structured, categorized by flow or business rule, comes with an authentication module as an example
-- "shared/components": Folder where more complex components with their hooks and functions are structured
-- "shared/pieces": Isolated components aimed at composing more complex components
-- "shared/hooks": Folder where hooks used in multiple modules or routes are stored
-- "shared/constants": Folder for global constants
-- "gateways": Folder for various types of gateways, comes with Axios gateway
-- "providers": Folder referencing project providers to be called in the layout
-- "styles": Stores the tailwind reference and the globals file for global CSS
-- "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging
-- "middleware": Next.js file for routing and auxiliary functions, comes with an example
-
-### What does the project have?
-
+- The project uses Next.js version 13.4.8 and the App Router.
 - For tests Jest are implemented using @testing-library
 - For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
 - For Auth [Nextauth](https://next-auth.js.org/), provider google like example
@@ -49,7 +32,25 @@
 - [usehook-ts](https://usehooks-ts.com/) is also installed.
 - For visual designer using [tailwind](https://tailwindcss.com/docs/width)
 
-### Tailwind config has been implemented with this preset:
+## 🚧 How is the project structured? <a name = "structured"></a>
+
+- "app/layout": Default layout that calls providers, global components like navbar
+- "app/loading": Default loading
+- "app/not-found": 404
+- "app/page": Homepage
+- "app/dashboard: Example protected route
+- "modules": Folder where the project modules are structured, categorized by flow or business rule in the modules there is also the service call to external api using nextjs SSR, there is an authentication module as an example using nextauth.
+- "shared/components": Folder where more complex components with their hooks and functions are structured
+- "shared/pieces": Isolated components aimed at composing more complex components
+- "shared/hooks": Folder where hooks used in multiple modules or routes are stored
+- "shared/constants": Folder for global constants
+- "gateways": Folder for various types of gateways, comes with Axios gateway
+- "providers": Folder referencing project providers to be called in the layout
+- "styles": Stores the tailwind reference and the globals file for global CSS
+- "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging
+- "middleware": Next.js file for routing and auxiliary functions, comes with an example
+
+#### 🖌️ Tailwind config has been implemented with this preset:
 
 ```
 /** @type {import('tailwindcss').Config} */
@@ -84,7 +85,7 @@ module.exports = {
 }
 ```
 
-## Instructions for installing the boilerplate.
+## 🔦 Instructions for installing the boilerplate.
 
 ```
 npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
@@ -100,6 +101,19 @@ Run
 
 ```
 npm run dev
+```
+
+.env
+
+```
+NODE_ENV=production
+API_URL='',
+JWT_SECRET='',
+NEXT_HOST_URL=http://localhost:3000
+
+GOOGLE_CLIENT_ID=''
+GOOGLE_CLIENT_SECRET='
+NEXTAUTH_SECRET=''
 ```
 
 <sup>Date of the last version - 13-08-2023</sup>
