@@ -1,27 +1,34 @@
-# NEXTJS Boilerplate
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=90px height=90px src="./public/logo.png" alt="Scout logo"></a>
+</p>
 
-## How is the project structured?
+<h3 align="center">NEXTJS Boilerplate Orangescreen</h3>
+## 📝 Table of Contents
+
+- [Structured](#structured)
+- [Getting Started](#getting_started)
+
+## How is the project structured? <a name = "structured"></a>
 
 ### The project uses Next.js version 13.4.8 and the App Router.
 
-### Folders 
-- "app": Next.js routing folder
 - "app/layout": Default layout that calls providers, global components like navbar
 - "app/loading": Default loading
 - "app/not-found": 404
 - "app/page": Homepage
 - "modules": Folder where project modules are structured, categorized by flow or business rule, comes with an authentication module as an example
-- "components": Folder where more complex components with their hooks and functions are structured
-- "pieces": Isolated components aimed at composing more complex components
-- "hooks": Folder where hooks used in multiple modules or routes are stored
-- "constants": Folder for global constants
+- "shared/components": Folder where more complex components with their hooks and functions are structured
+- "shared/pieces": Isolated components aimed at composing more complex components
+- "shared/hooks": Folder where hooks used in multiple modules or routes are stored
+- "shared/constants": Folder for global constants
 - "gateways": Folder for various types of gateways, comes with Axios gateway
 - "providers": Folder referencing project providers to be called in the layout
 - "styles": Stores the tailwind reference and the globals file for global CSS
 - "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging
 - "middleware": Next.js file for routing and auxiliary functions, comes with an example
 
-## What does the project have?
+### What does the project have?
 
 - For tests Jest are implemented using @testing-library
 - For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
@@ -31,17 +38,19 @@
 - fetch api using axios like gateway
 
 - Husky has also been implemented for:
-Commitlint
-Pre-commit with lint-staged and Prettier
-Pre-push running lint-staged and tests
-Jest tests are implemented using @testing-library.
+  Commitlint
+  Pre-commit with lint-staged and Prettier
+  Pre-push running lint-staged and tests
+  Jest tests are implemented using @testing-library.
 
 - The next-config includes PWA configurations.
 - Image permissions are set up, for example, for Google authentication.
 
 - [usehook-ts](https://usehooks-ts.com/) is also installed.
 - For visual designer using [tailwind](https://tailwindcss.com/docs/width)
-Tailwind config has been implemented with this preset:
+
+### Tailwind config has been implemented with this preset:
+
 ```
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -76,18 +85,21 @@ module.exports = {
 ```
 
 ## Instructions for installing the boilerplate.
+
 ```
 npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
 ```
+
 Install
+
 ```
 npm install
 ```
+
 Run
+
 ```
 npm run dev
 ```
 
-### Date of the last version. 
-``` 07-08-2023 ```
-
+<sup>Date of the last version - 13-08-2023</sup>
