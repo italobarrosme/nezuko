@@ -1,12 +1,12 @@
 'use client'
 
-import type { NextPage } from 'next'
 import Link from 'next/link'
 import { Icon } from '@iconify/react'
 import { useRedirectTimeout } from '@/shared/hooks/useRedirectTimeout'
 
-const NotFound: NextPage = () => {
+const NotFound = () => {
   useRedirectTimeout(5000, '/')
+
   return (
     <>
       <section className="flex h-full w-full items-center p-16">
@@ -22,7 +22,11 @@ const NotFound: NextPage = () => {
               But dont worry, you can find plenty of other things on our
               homepage.
             </p>
-            <Link href="/" className="flex items-center justify-center gap-4">
+            <Link
+              href="/"
+              passHref
+              className="flex items-center justify-center gap-4"
+            >
               <Icon icon={'bi:arrow-left-circle'} />
               Back to Home{' '}
             </Link>
