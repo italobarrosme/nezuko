@@ -28,7 +28,7 @@ const NotFound = () => {
               className="flex items-center justify-center gap-4"
             >
               <Icon icon={'bi:arrow-left-circle'} />
-              Back to Home{' '}
+              Back to Home
             </Link>
           </div>
         </div>

@@ -22,7 +22,6 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
-    "@babel/preset-typescript": "^7.22.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@types/jest": "^29.5.3",
     "@types/node": "20.3.3",

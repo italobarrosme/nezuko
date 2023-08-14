@@ -1,15 +1,13 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
 export const useRedirectTimeout = (timeout: number, redirectPath: string) => {
-  const router = useRouter()
-
   useEffect(() => {
-    console.log('router', timeout, router)
     setTimeout(() => {
-      router.push(redirectPath)
+      console.log('redirecting to', redirectPath)
+
+      window.location.href = redirectPath // Força uma recarga completa da página
     }, timeout)
-  }, [redirectPath, router, timeout])
+  }, [redirectPath, timeout])
 }
