@@ -92,12 +92,6 @@ module.exports = {
 npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
 ```
 
-Install
-
-```
-npm install
-```
-
 Run
 
 ```
