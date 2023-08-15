@@ -9,8 +9,7 @@
     "lint": "eslint src --ext=ts",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "vitest"
   },
   "lint-staged": {
     "src/**/*.+(ts|tsx)": [
@@ -49,6 +48,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/next-pwa": "^5.6.4",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@vitejs/plugin-react": "^4.0.4",
     "autoprefixer": "^10.4.14",
     "eslint-config-next": "^13.4.13",
     "eslint-config-prettier": "^8.6.0",
@@ -56,7 +56,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "husky": "^8.0.3",
-    "jest-environment-jsdom": "^29.6.1",
     "jsdom": "^21.1.0",
     "lint-staged": "^13.1.2",
     "postcss": "^8.4.25",
@@ -66,6 +65,7 @@
     "sass": "^1.52.3",
     "tailwind-merge": "^1.13.2",
     "tailwindcss": "^3.3.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
   }
 }
