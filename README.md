@@ -4,6 +4,7 @@
 </p>
 
 <h3 align="center">NEXTJS Boilerplate Orangescreen</h3>
+
 ## 📝 Table of Contents
 
 - [What does have?](#doeshave)
@@ -13,7 +14,7 @@
 ## 📦 What does the project have? <a name="doeshave">
 
 - The project uses Next.js version 13.4.8 and the App Router.
-- For tests Jest are implemented using @testing-library
+- For tests [Vitest](https://vitest.dev/guide/) are implemented using @testing-library
 - For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
 - For Auth [Nextauth](https://next-auth.js.org/), provider google like example
 - For cookies using Nookies
@@ -24,7 +25,7 @@
   Commitlint
   Pre-commit with lint-staged and Prettier
   Pre-push running lint-staged and tests
-  Jest tests are implemented using @testing-library.
+  Vitest tests are implemented using @testing-library.
 
 - The next-config includes PWA configurations.
 - Image permissions are set up, for example, for Google authentication.
@@ -116,4 +117,4 @@ GOOGLE_CLIENT_SECRET='
 NEXTAUTH_SECRET=''
 ```
 
-<sup>Date of the last version - 13-08-2023</sup>
+<sup>Date of the last version - 15-08-2023</sup>
