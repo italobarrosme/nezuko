@@ -45,7 +45,6 @@
 - "shared/pieces": Isolated components aimed at composing more complex components
 - "shared/hooks": Folder where hooks used in multiple modules or routes are stored
 - "shared/constants": Folder for global constants
-- "gateways": Folder for various types of gateways, comes with Axios gateway
 - "providers": Folder referencing project providers to be called in the layout
 - "styles": Stores the tailwind reference and the globals file for global CSS
 - "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging

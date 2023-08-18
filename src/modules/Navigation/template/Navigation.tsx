@@ -6,6 +6,7 @@ import { useMenuNav } from '../hooks'
 
 export const Navigation = () => {
   const { isMenuOpen, menus, toggleMenu, signIn, data } = useMenuNav()
+
   return (
     <Navbar logo="/logo.png" menus={menus} isMenuOpen={isMenuOpen}>
       <MenuAuth
