@@ -4,7 +4,6 @@ import { ButtonHTMLAttributes } from 'react'
 
 export type ButtonProps = {
   label?: string
-  onClick: () => void
   className?: string
   icon?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>
