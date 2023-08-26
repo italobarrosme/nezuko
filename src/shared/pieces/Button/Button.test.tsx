@@ -25,6 +25,7 @@ describe('Button', () => {
       icon: 'test',
       onClick: () => jest.fn(),
       type: 'button',
+      className: 'bg-brand-primary',
     })
 
     const element = screen.getByRole('button')

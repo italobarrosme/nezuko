@@ -3,7 +3,7 @@
 exports[`Button > should will snapshot 1`] = `
 <div>
   <button
-    class="test flex items-center gap-4 whitespace-nowrap rounded bg-brand-primary px-4 py-2 font-bold text-white hover:bg-brand-secondary"
+    class="flex items-center gap-4 whitespace-nowrap rounded bg-brand-secondary px-4 py-2 font-bold text-white hover:bg-brand-secondary test"
   >
     <span />
     <p>
