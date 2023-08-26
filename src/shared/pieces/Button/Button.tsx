@@ -19,8 +19,8 @@ export const Button = ({
     <button
       type={type}
       className={cn(
-        className,
-        'flex items-center gap-4 whitespace-nowrap rounded bg-brand-primary px-4 py-2 font-bold text-white hover:bg-brand-secondary'
+        'flex items-center gap-4 whitespace-nowrap rounded bg-brand-secondary px-4 py-2 font-bold text-white hover:bg-brand-secondary',
+        className
       )}
       onClick={onClick}
     >
