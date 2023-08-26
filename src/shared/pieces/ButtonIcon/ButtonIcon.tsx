@@ -1,12 +1,12 @@
 import { Icon } from '@iconify/react'
+import { ButtonHTMLAttributes } from 'react'
 
 export type ButtonIconProps = {
   label?: string
   icon: string
-  onClick: () => void
   width?: number
   height?: number
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const ButtonIcon = ({
   onClick,
