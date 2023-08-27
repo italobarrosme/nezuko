@@ -3,7 +3,7 @@ body {
   @apply bg-brand-light;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -11,23 +11,29 @@ a {
   text-decoration: none;
 }
 
+button {
+  @apply cursor-pointer;
+  border: none;
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  @apply bg-brand-grey;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-brand-primary;
-  border-radius: 10px;
+  @apply bg-brand-secondary;
+  border-radius: 4px;
 }
 
 /* Handle on hover */
