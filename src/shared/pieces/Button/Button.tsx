@@ -9,20 +9,20 @@ export type ButtonProps = {
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
-  onClick,
   label,
   className,
   type,
   icon = '',
+  onClick,
 }: ButtonProps) => {
   return (
     <button
+      onClick={onClick}
       type={type}
       className={cn(
-        'flex items-center gap-4 whitespace-nowrap rounded bg-brand-secondary px-4 py-2 font-bold text-white hover:bg-brand-secondary',
+        'flex items-center gap-4 whitespace-nowrap rounded bg-brand-primary px-4 py-2 font-bold text-white hover:bg-brand-secondary',
         className
       )}
-      onClick={onClick}
     >
       {icon ? <Icon icon={icon} width={24} /> : null}
       <p>{label}</p>

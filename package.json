@@ -10,6 +10,7 @@
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "test:deploy": "vitest --run",
     "test:snapshot": "vitest -u"
   },
@@ -49,6 +50,7 @@
     "@types/next-pwa": "^5.6.4",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@vitejs/plugin-react": "^4.0.4",
+    "@vitest/coverage-istanbul": "^0.34.4",
     "autoprefixer": "^10.4.14",
     "eslint-config-next": "^13.4.13",
     "eslint-config-prettier": "^8.6.0",

@@ -11,5 +11,8 @@ export default defineConfig({
     environment: 'jsdom',
     include: ['**/*.test.tsx', '**/*.spec.tsx', '**/*.spec.ts'],
     setupFiles: ['./test/setup.ts'],
+    coverage: {
+      provider: 'istanbul', // or 'v8'
+    },
   },
 })
