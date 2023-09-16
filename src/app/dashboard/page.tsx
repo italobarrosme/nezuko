@@ -28,7 +28,7 @@ export default function Dashboard() {
   }, [])
 
   return (
-    <main className="min-h-screen p-4">
+    <section>
       <h1>Example page Dashboard</h1>
 
       <h2>{dataApi?.title}</h2>
@@ -36,6 +36,6 @@ export default function Dashboard() {
       {dataApi?.items?.map((item) => (
         <p key={item.id}>{item.name}</p>
       ))}
-    </main>
+    </section>
   )
 }

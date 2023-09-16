@@ -20,12 +20,12 @@ type NavbarProps = {
 
 export const Navbar = ({ logo, menus, isMenuOpen, children }: NavbarProps) => {
   return (
-    <nav className="relative flex h-20 items-center justify-between px-4 shadow-sm">
+    <nav className="absolute top-0 flex h-20 w-full items-center justify-between bg-brand-dark px-4 shadow-sm">
       <Link href="/">
-        <Image src={logo} alt="logo" width={42} height={42} />
+        <Image src={logo} alt="logo" width={180} height={180} />
       </Link>
       {children}
-      {isMenuOpen ? (
+      {!!isMenuOpen && (
         <ul className="absolute right-20  top-16 z-40 rounded-md border bg-brand-light p-2 shadow-xl">
           {menus.map((menu, index) => (
             <li
@@ -37,7 +37,7 @@ export const Navbar = ({ logo, menus, isMenuOpen, children }: NavbarProps) => {
             </li>
           ))}
         </ul>
-      ) : null}
+      )}
     </nav>
   )
 }

@@ -22,14 +22,14 @@ export const MenuAuth = ({
       className={cn(
         'cursor-pointer appearance-none',
         data
-          ? 'flex items-center gap-4 rounded-3xl border p-2'
+          ? 'flex items-center gap-4 rounded-3xl border p-2 border-brand-light'
           : 'p-2 font-bold text-brand-secondary'
       )}
       {...props}
     >
       {data?.user ? (
         <>
-          <Icon icon={icon} width={32} />
+          <Icon icon={icon} width={32} className="text-brand-light" />
           <Image
             src={data.user?.image || ''}
             alt="image user"

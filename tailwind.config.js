@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,,scss}'],
   theme: {
@@ -16,15 +15,20 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          dark: '#0D0D0D',
+          dark: '#030826',
           light: '#fffef3',
-          primary: '#004b8f',
-          secondary: '#1068b9',
-          soft: '#2D3035',
-          accent: '#c92524',
-          grey: '#f5f5f5',
+          primary: '#F27141',
+          secondary: '#F28B30',
+          soft: '#F28D77',
+          accent: '#F24C27',
         },
         transparent: 'transparent',
+      },
+      backgroundImage: {
+        'effect-granula': "url('/effectgranula.png')",
+      },
+      minHeight: {
+        'screen-nav': 'calc(100vh - 5rem)',
       },
     },
   },

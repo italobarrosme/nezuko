@@ -13,7 +13,6 @@ a {
 
 button {
   @apply cursor-pointer;
-  border: none;
   outline: none;
 }
 
@@ -27,7 +26,7 @@ button {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-brand-grey;
+  @apply bg-brand-dark;
 }
 
 /* Handle */
