@@ -19,7 +19,6 @@
 - For Auth [Nextauth](https://next-auth.js.org/), provider google like example
 - For cookies using Nookies
 - Prettier eslint and lintstaged for organization code
-- fetch api using axios like gateway
 
 - Husky has also been implemented for:
   Commitlint
