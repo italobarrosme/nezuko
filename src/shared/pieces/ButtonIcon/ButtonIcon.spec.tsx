@@ -1,22 +1,18 @@
 import { screen, render } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { ButtonIcon, type ButtonIconProps } from './ButtonIcon'
+import userEvent from '@testing-library/user-event'
 
 const renderComponent = ({
-  label = 'ButtonIcon',
+  children = 'ButtonIcon',
   icon = 'mdi:home',
   onClick = vi.fn(),
   height = 32,
   width = 32,
 }: ButtonIconProps) => {
   render(
-    <ButtonIcon
-      label={label}
-      icon={icon}
-      onClick={onClick}
-      height={height}
-      width={width}
-    />
+    <ButtonIcon icon={icon} onClick={onClick} height={height} width={width}>
+      {children}
+    </ButtonIcon>
   )
 }
 
@@ -27,7 +23,7 @@ describe('ButtonIcon', () => {
 
   it('render component', () => {
     renderComponent({
-      label: 'ButtonIcon',
+      children: 'ButtonIcon',
       icon: 'mdi:home',
     })
     const button = screen.getByRole('button', { name: 'ButtonIcon' })
@@ -42,7 +38,7 @@ describe('ButtonIcon', () => {
     }))
 
     renderComponent({
-      label: 'ButtonIcon',
+      children: 'ButtonIcon',
       icon: 'mdi:home',
       height: 32,
       width: 32,
@@ -55,12 +51,31 @@ describe('ButtonIcon', () => {
 
   it('should render without label', () => {
     renderComponent({
-      label: '',
+      children: '',
       icon: 'mdi:home',
     })
     const button = screen.getByRole('button')
     const label = button.querySelector('label')
 
     expect(label).not.toBeInTheDocument()
+  })
+
+  it('should perform an action when the button is clicked', async () => {
+    const onClickStub = vi.fn()
+
+    renderComponent({
+      children: 'ButtonIcon',
+      icon: 'mdi:home',
+      onClick: onClickStub,
+    })
+
+    const button = screen.getByRole('button', {
+      name: 'ButtonIcon',
+    })
+
+    // Simulate a click on the button
+    await userEvent.click(button)
+
+    expect(onClickStub).toBeCalled()
   })
 })

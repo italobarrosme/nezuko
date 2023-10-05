@@ -7,9 +7,17 @@ vi.mock('@iconify/react', () => ({
   Icon: () => <svg data-testid="icon" />,
 }))
 
-const renderComponent = ({ label, className, icon, onClick }: ButtonProps) => {
+const renderComponent = ({
+  label,
+  className,
+  icon,
+  children,
+  onClick,
+}: ButtonProps) => {
   render(
-    <Button label={label} className={className} icon={icon} onClick={onClick} />
+    <Button label={label} className={className} icon={icon} onClick={onClick}>
+      {children}
+    </Button>
   )
 }
 
@@ -20,7 +28,7 @@ describe('Button', () => {
 
   it('should render component', () => {
     renderComponent({
-      label: 'test',
+      children: 'test',
     })
 
     const labelButton = screen.getByRole('button', {
@@ -34,7 +42,7 @@ describe('Button', () => {
     const onClickStub = vi.fn()
 
     renderComponent({
-      label: 'test',
+      children: 'test',
       onClick: onClickStub,
     })
 
@@ -50,7 +58,7 @@ describe('Button', () => {
 
   it('should render an icon', () => {
     renderComponent({
-      label: 'test',
+      children: 'test',
       icon: 'test',
     })
 
@@ -61,7 +69,7 @@ describe('Button', () => {
 
   it('should render a custom class', () => {
     renderComponent({
-      label: 'test',
+      children: 'test',
       className: 'bg-red-500',
     })
 

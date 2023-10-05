@@ -2,12 +2,14 @@
 
 import { useEffect } from 'react'
 
-export const useRedirectTimeout = (timeout: number, redirectPath: string) => {
+export const useRedirectTimeout = (
+  timeout: number,
+  redirectPath: string,
+  redirectFn: (redirectPath: string) => void
+) => {
   useEffect(() => {
     setTimeout(() => {
-      console.log('redirecting to', redirectPath)
-
-      window.location.href = redirectPath // Força uma recarga completa da página
+      redirectFn(redirectPath)
     }, timeout)
-  }, [redirectPath, timeout])
+  }, [redirectFn, redirectPath, timeout])
 }

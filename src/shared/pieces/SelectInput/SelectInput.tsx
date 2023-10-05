@@ -1,35 +1,36 @@
 import { cn } from '@/utils'
 import { SelectHTMLAttributes } from 'react'
+
+type option = {
+  value: string | number
+  label: string
+}
+
 export type SelectInputProps = {
   label: string
-  name: string
-  options: []
+  options: option[]
 } & SelectHTMLAttributes<HTMLSelectElement>
 
 export const SelectInput = ({
   label,
-  name,
   options,
-  value,
-  onChange,
   disabled,
   className,
+  ...props
 }: SelectInputProps) => {
   return (
     <div className={cn('flex flex-col gap-2')}>
-      <label htmlFor={name} className="text-sm font-medium">
+      <label htmlFor={label} className="text-sm font-medium">
         {label}
       </label>
       <select
-        id={name}
-        name={name}
+        id={label}
         className={cn(
           'border-1 h-9 w-80 rounded-md border-brand-primary p-2 text-brand-dark',
           className
         )}
-        onChange={onChange}
-        value={value}
         disabled={disabled}
+        {...props}
       >
         {options.map((option: any) => (
           <option

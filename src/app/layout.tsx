@@ -24,14 +24,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body>
-        <NextAuthProvider>
+      <NextAuthProvider>
+        <body>
           <ToastProvider>
             <Navigation />
             <main className="min-h-screen-nav px-4 pt-24">{children}</main>
           </ToastProvider>
-        </NextAuthProvider>
-      </body>
+        </body>
+      </NextAuthProvider>
     </html>
   )
 }
