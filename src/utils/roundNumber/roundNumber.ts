@@ -5,5 +5,5 @@ export const roundNumber = (value: number, numDecimalsPlaces = 2) => {
       numDecimalsPlaces
   )
 
-  return format > 0 ? `+${format}` : format
+  return format > 0 ? `+${format}` : `${format}`
 }

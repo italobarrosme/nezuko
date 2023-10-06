@@ -4,7 +4,7 @@ export function formatCurrencyToBRL(
 ): string {
   if (!value) return ''
   if (isMoneyFormattedAsIntValue) {
-    value = value / 100 // int 1000 = R$ 10,00
+    value = value / 100
   }
 
   const parsedValue = new Intl.NumberFormat('pt-BR', {
