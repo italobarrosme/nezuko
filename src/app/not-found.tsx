@@ -3,11 +3,9 @@
 import Link from 'next/link'
 import { Icon } from '@iconify/react'
 import { useRedirectTimeout } from '@/shared/hooks/useRedirectTimeout'
-import { useRouter } from 'next/navigation'
 
 const NotFound = () => {
-  const { push } = useRouter()
-  useRedirectTimeout(5000, '/', push)
+  useRedirectTimeout(5000, '/')
 
   return (
     <>

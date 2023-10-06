@@ -1,15 +1,15 @@
-'use client'
-
 import { useEffect } from 'react'
 
-export const useRedirectTimeout = (
-  timeout: number,
-  redirectPath: string,
-  redirectFn: (redirectPath: string) => void
-) => {
+export const useRedirectTimeout = (timeout: number, path: string) => {
   useEffect(() => {
-    setTimeout(() => {
-      redirectFn(redirectPath)
+    const timeoutId = setTimeout(() => {
+      if (typeof window !== 'undefined') {
+        window.location.href = path
+      }
     }, timeout)
-  }, [redirectFn, redirectPath, timeout])
+
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [timeout, path])
 }
