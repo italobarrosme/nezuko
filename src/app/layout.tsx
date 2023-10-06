@@ -25,10 +25,12 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <NextAuthProvider>
-        <body>
+        <body className="bg-brand-dark bg-effect-granula">
           <ToastProvider>
             <Navigation />
-            <main className="min-h-screen-nav px-4 pt-24">{children}</main>
+            <main className="mt-20 min-h-screen-nav p-4 text-brand-light">
+              {children}
+            </main>
           </ToastProvider>
         </body>
       </NextAuthProvider>
