@@ -3,7 +3,7 @@
  <img width=90px height=90px src="./public/logo.png" alt="Scout logo"></a>
 </p>
 
-<h3 align="center">NEXTJS Boilerplate Orangescreen</h3>
+<h3 align="center">NEXTJS Boilerplate</h3>
 
 ## 📝 Table of Contents
 
@@ -13,17 +13,16 @@
 
 ## 📦 What does the project have? <a name="doeshave">
 
-- The project uses Next.js version 13.4.8 and the App Router.
+- The project uses Next.js version 13.5.23 and the App Router.
 - For tests [Vitest](https://vitest.dev/guide/) are implemented using @testing-library
 - For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
 - For Auth [Nextauth](https://next-auth.js.org/), provider google like example
-- For cookies using Nookies
 - Prettier eslint and lintstaged for organization code
 
 - Husky has also been implemented for:
   Commitlint
   Pre-commit with lint-staged and Prettier
-  Pre-push running lint-staged and tests
+  Pre-push running lint-staged tests and build
   Vitest tests are implemented using @testing-library.
 
 - The next-config includes PWA configurations.
@@ -48,6 +47,7 @@
 - "styles": Stores the tailwind reference and the globals file for global CSS
 - "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging
 - "middleware": Next.js file for routing and auxiliary functions, comes with an example
+- "public": In the 'public' folder, there are some default images for the system and a 'manifest.json' file for PWA attributes.
 
 #### 🖌️ Tailwind config has been implemented with this preset:
 
@@ -70,14 +70,20 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          dark: '#0D0D0D',
+          dark: '#030826',
           light: '#fffef3',
-          primary: '#004b8f',
-          secondary: '#1068b9',
-          soft: '#2D3035',
-          accent: '#c92524',
+          primary: '#F27141',
+          secondary: '#F28B30',
+          soft: '#F28D77',
+          accent: '#F24C27',
         },
         transparent: 'transparent',
+      },
+      backgroundImage: {
+        'effect-granula': "url('/effectgranula.png')",
+      },
+      minHeight: {
+        'screen-nav': 'calc(100vh - 5rem)',
       },
     },
   },
@@ -109,4 +115,4 @@ GOOGLE_CLIENT_SECRET='
 NEXTAUTH_SECRET=''
 ```
 
-<sup>Date of the last version - 15-08-2023</sup>
+<sup>Date of the last version - 10-10-2023</sup>
