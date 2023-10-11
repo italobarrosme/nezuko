@@ -15,7 +15,7 @@
 
 - The project uses Next.js version 13.5.23 and the App Router.
 - For tests [Vitest](https://vitest.dev/guide/) are implemented using @testing-library
-- For storage, [zustend](https://next-auth.js.org/) is used, with the "ListToast" component as an example of usage.
+- For storage, [zustend](https://next-auth.js.org/) is used, with the "loading" component as an example of usage.
 - For Auth [Nextauth](https://next-auth.js.org/), provider google like example
 - Prettier eslint and lintstaged for organization code
 
@@ -108,7 +108,7 @@ npm run dev
 NODE_ENV=production
 API_URL='',
 JWT_SECRET='',
-NEXT_HOST_URL=http://localhost:3000
+NEXTAUTH_URL=http://localhost:3000
 
 GOOGLE_CLIENT_ID=''
 GOOGLE_CLIENT_SECRET='

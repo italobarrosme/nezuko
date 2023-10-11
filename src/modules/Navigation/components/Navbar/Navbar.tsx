@@ -22,7 +22,7 @@ export const Navbar = ({ logo, menus, isMenuOpen, children }: NavbarProps) => {
   return (
     <nav className="absolute top-0 flex h-20 w-full items-center justify-between bg-brand-dark px-4 shadow-sm">
       <Link href="/">
-        <Image src={logo} alt="logo" width={180} height={180} />
+        <Image src={logo} alt="logo" width={64} height={64} priority={true} />
       </Link>
       {children}
       {!!isMenuOpen && (
