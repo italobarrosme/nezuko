@@ -13,7 +13,7 @@
 
 ## 📦 What does the project have? <a name="doeshave">
 
-- The project uses Next.js version 13.5.23 and the App Router.
+- The project uses Next.js version 14 and the App Router.
 - For tests [Vitest](https://vitest.dev/guide/) are implemented using @testing-library
 - For storage, [zustend](https://next-auth.js.org/) is used, with the "loading" component as an example of usage.
 - For Auth [Nextauth](https://next-auth.js.org/), provider google like example
@@ -39,7 +39,7 @@
 - "app/page": Homepage
 - "app/dashboard: Example protected route
 - "modules": Folder where the project modules are structured, categorized by flow or business rule in the modules there is also the service call to external api using nextjs SSR, there is an authentication module as an example using nextauth.
-- "shared/components": Folder where more complex components with their hooks and functions are structured
+- "shared/components": Folder where more complex components with their hooks and functions are structured.[Tailwind](https://www.tailwind-variants.org/docs/introduction) variants is being used to create component variants,
 - "shared/pieces": Isolated components aimed at composing more complex components
 - "shared/hooks": Folder where hooks used in multiple modules or routes are stored
 - "shared/constants": Folder for global constants
@@ -115,4 +115,4 @@ GOOGLE_CLIENT_SECRET='
 NEXTAUTH_SECRET=''
 ```
 
-<sup>Date of the last version - 10-10-2023</sup>
+<sup>version</sup>

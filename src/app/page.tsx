@@ -1,3 +1,4 @@
+import { Button } from '@/shared/pieces/Button'
 import { cn } from '@/utils'
 
 export default async function Home() {
@@ -16,7 +17,6 @@ export default async function Home() {
   return (
     <>
       <h1>Next.js Boilerplate</h1>
-
       <h3 className="my-4 text-xl">Example fetch serve components</h3>
 
       <ul>

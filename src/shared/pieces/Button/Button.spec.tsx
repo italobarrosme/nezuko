@@ -8,14 +8,19 @@ vi.mock('@iconify/react', () => ({
 }))
 
 const renderComponent = ({
-  label,
   className,
   icon,
   children,
+  variant,
   onClick,
 }: ButtonProps) => {
   render(
-    <Button label={label} className={className} icon={icon} onClick={onClick}>
+    <Button
+      className={className}
+      variant={variant}
+      icon={icon}
+      onClick={onClick}
+    >
       {children}
     </Button>
   )
@@ -78,5 +83,22 @@ describe('Button', () => {
     })
 
     expect(button).toHaveClass('bg-red-500')
+  })
+
+  it('should change variant', () => {
+    renderComponent({
+      children: 'test',
+      variant: {
+        color: 'danger',
+        size: 'lg',
+      },
+    })
+
+    const button = screen.getByRole('button', {
+      name: 'test',
+    })
+
+    expect(button).toHaveClass('bg-red-500')
+    expect(button).toHaveClass('text-lg')
   })
 })
