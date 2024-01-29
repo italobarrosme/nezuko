@@ -18,7 +18,7 @@ export function getCustomLog({ log, statusCode, type = 'info' }: Log) {
 
   const customLog = `${
     logTypeDictionary[type]
-  } [${occurrenceDate.toLocaleString()}] - ${log} ${
+  } [${occurrenceDate.toLocaleString('pt-br')}] - ${log} ${
     statusCode ? `- status: ${statusCode}` : ''
   }`
 
