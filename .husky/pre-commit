@@ -1,2 +1,2 @@
 npx --no-install lint-staged
-npx -p prettier@latest -p pretty-quick
+npx -p prettier@latest
