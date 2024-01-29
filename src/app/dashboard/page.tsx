@@ -33,9 +33,7 @@ export default function Dashboard() {
 
       <h2>{dataApi?.title}</h2>
       <p>{dataApi?.description}</p>
-      {dataApi?.items?.map((item) => (
-        <p key={item.id}>{item.name}</p>
-      ))}
+      {dataApi?.items?.map((item) => <p key={item.id}>{item.name}</p>)}
     </section>
   )
 }

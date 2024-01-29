@@ -6,15 +6,15 @@ export const Loading = () => {
     >
       <div className="flex h-screen items-center justify-center space-x-2">
         <div
-          className="h-4 w-4 animate-pulse rounded-full bg-brand-secondary"
+          className="size-4 animate-pulse rounded-full bg-brand-secondary"
           data-testid="dot"
         ></div>
         <div
-          className="h-4 w-4 animate-pulse rounded-full bg-brand-secondary"
+          className="size-4 animate-pulse rounded-full bg-brand-secondary"
           data-testid="dot"
         ></div>
         <div
-          className="h-4 w-4 animate-pulse rounded-full bg-brand-secondary"
+          className="size-4 animate-pulse rounded-full bg-brand-secondary"
           data-testid="dot"
         ></div>
       </div>

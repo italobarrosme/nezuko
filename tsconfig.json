@@ -16,21 +16,22 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
     },
     "plugins": [
       {
-        "name": "next"
-      }
+        "name": "next",
+      },
     ],
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "next.config.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "vite.config.mjs",
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
