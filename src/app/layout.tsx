@@ -10,8 +10,8 @@ type Props = {
 }
 
 export const metadata: Metadata = {
-  title: 'Next.js Boilerplate',
-  description: 'Next.js Boilerplate',
+  title: 'Next.js Nezuko - Boilerplate',
+  description: 'Next.js  Nezuko - Boilerplate',
   manifest: '/manifest.json',
   icons: {
     apple: '/apple-icon.png',

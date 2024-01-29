@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=90px height=90px src="./public/logo.png" alt="Scout logo"></a>
+ <img width=90px height=90px src="./public/logo.png" alt="logo"></a>
 </p>
 
 <h3 align="center">NEXTJS Boilerplate</h3>
@@ -30,24 +30,6 @@
 
 - [usehook-ts](https://usehooks-ts.com/) is also installed.
 - For visual designer using [tailwind](https://tailwindcss.com/docs/width)
-
-## 🚧 How is the project structured? <a name = "structured"></a>
-
-- "app/layout": Default layout that calls providers, global components like navbar
-- "app/loading": Default loading
-- "app/not-found": 404
-- "app/page": Homepage
-- "app/dashboard: Example protected route
-- "modules": Folder where the project modules are structured, categorized by flow or business rule in the modules there is also the service call to external api using nextjs SSR, there is an authentication module as an example using nextauth.
-- "shared/components": Folder where more complex components with their hooks and functions are structured.[Tailwind variants](https://www.tailwind-variants.org/docs/introduction)is being used to create component variants,
-- "shared/pieces": Isolated components aimed at composing more complex components
-- "shared/hooks": Folder where hooks used in multiple modules or routes are stored
-- "shared/constants": Folder for global constants
-- "providers": Folder referencing project providers to be called in the layout
-- "styles": Stores the tailwind reference and the globals file for global CSS
-- "utils": Folder for support functions, comes with some example functions, includes the "cn" function for tailwind class merging
-- "middleware": Next.js file for routing and auxiliary functions, comes with an example
-- "public": In the 'public' folder, there are some default images for the system and a 'manifest.json' file for PWA attributes.
 
 #### 🖌️ Tailwind config has been implemented with this preset:
 

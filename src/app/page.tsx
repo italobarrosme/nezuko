@@ -1,4 +1,3 @@
-import { Button } from '@/shared/pieces/Button'
 import { cn } from '@/utils'
 
 export default async function Home() {
