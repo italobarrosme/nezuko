@@ -31,7 +31,7 @@
     "**/*.tsx",
     "next.config.ts",
     ".next/types/**/*.ts",
-    "vite.config.mjs",
+    "vitest.config.mts",
   ],
   "exclude": ["node_modules"],
 }

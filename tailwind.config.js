@@ -22,6 +22,11 @@ module.exports = {
           soft: '#F28D77',
           accent: '#F24C27',
         },
+        feedback: {
+          error: '#FF0000',
+          warning: '#FFC107',
+          success: '#4BB543',
+        },
         transparent: 'transparent',
       },
       backgroundImage: {

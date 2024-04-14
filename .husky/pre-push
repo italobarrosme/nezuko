@@ -1,7 +1,17 @@
-npx --no-install lint-staged
+
+echo "🧪  Starting a test check" 
+
 npm run test:deploy --findRelatedTests --bail
-npm run build  # Substitua isso pelo comando de construção real que você está usando
 if [ $? -ne 0 ]; then
-  echo "A construção falhou. Não é possível fazer push."
+  echo "🧪⚠️  The tests failed. Push is not possible."
   exit 1
 fi
+echo "🧪  Tests passed. Pushing to the repository."
+
+echo "📦  Starting a build check"
+npm run build
+if [ $? -ne 0 ]; then
+  echo "📦⚠️  A construção falhou. Não é possível fazer push."
+  exit 1
+fi
+echo "📦  Build succeeded. Pushing to the repository."
