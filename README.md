@@ -70,7 +70,7 @@ module.exports = {
 }
 ```
 
-## 🔦 Instructions for installing the boilerplate.
+## 🔦 Instructions for installing the boilerplate. <a name="getting_started">
 
 ```
 npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
