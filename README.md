@@ -8,7 +8,6 @@
 ## 📝 Table of Contents
 
 - [What does have?](#doeshave)
-- [Structured](#structured)
 - [Getting Started](#getting_started)
 
 ## 📦 What does the project have? <a name="doeshave">
