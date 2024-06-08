@@ -1,4 +1,6 @@
+import { Example } from '@/modules/example'
 import { cn } from '@/utils'
+import { Text } from '@coqueirodigital/react-components'
 
 export default async function Home() {
   async function exampleFetchData() {
@@ -15,9 +17,15 @@ export default async function Home() {
 
   return (
     <>
-      <section className="max-w-5xl text-brand-light">
-        <h1>Next.js Boilerplate</h1>
-        <h3 className="my-4 text-xl">Example fetch serve components</h3>
+      <section className="max-w-5xl text-primary-regular">
+        <Text tag="h1" variant="3xl/bold">
+          Hello World
+        </Text>
+        <Text tag="h2" variant="xl/normal">
+          This is an example of a page
+        </Text>
+
+        <Example />
 
         <ul>
           {data.map((item: any, index: number) => (
