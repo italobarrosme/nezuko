@@ -17,23 +17,23 @@ export default async function Home() {
 
   return (
     <>
-      <section className="max-w-5xl text-primary-regular">
+      <section className="flex max-w-5xl flex-col gap-16 text-primary-regular">
         <Text tag="h1" variant="3xl/bold">
           Hello World
         </Text>
-        <Text tag="h2" variant="xl/normal">
-          This is an example of a page
-        </Text>
-
         <Example />
-
-        <ul>
-          {data.map((item: any, index: number) => (
-            <li key={item.id} className={cn('text-brand-primary')}>
-              {index} - {item.name}
-            </li>
-          ))}
-        </ul>
+        <div>
+          <Text tag="h2" variant="2xl/bold">
+            Example Data from API
+          </Text>
+          <ul>
+            {data.map((item: any, index: number) => (
+              <li key={item.id} className={cn('text-primary-regular')}>
+                {index} - {item.name}
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </>
   )

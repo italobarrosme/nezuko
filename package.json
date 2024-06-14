@@ -1,6 +1,6 @@
 {
   "name": "nezuko-boiler-plate",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -24,7 +24,7 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
-    "@coqueirodigital/react-components": "^1.0.16",
+    "@coqueirodigital/react-components": "^1.0.19",
     "@faker-js/faker": "^8.4.1",
     "@hookform/resolvers": "^3.3.2",
     "@radix-ui/react-dialog": "^1.0.5",
