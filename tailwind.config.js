@@ -45,7 +45,16 @@ module.exports = {
           'highlight-80': 'var(--color-complementary-highlight-80)',
         },
       },
+      backgroundImage: {
+        'effect-granula': "url('/effectgranula.png')",
+      },
+      minHeight: {
+        'screen-nav': 'calc(100vh - 5rem)',
+      },
       keyframes: {
+        spin: {
+          to: { transform: 'rotate(360deg)' },
+        },
         wave: {
           '0%': {
             transform: 'scaleX(1)',
@@ -191,6 +200,7 @@ module.exports = {
       },
     },
     animation: {
+      spin: 'spin 1s linear infinite',
       wave: 'wave 1.6s ease-in-out infinite',
       shimmer: 'shimmer infinite alternate ease-in-out',
       'bounce-in': 'bounce-in 0.3s ease-in-out',

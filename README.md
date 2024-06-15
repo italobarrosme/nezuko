@@ -29,47 +29,6 @@
 - [usehook-ts](https://usehooks-ts.com/) is also installed.
 - For visual designer using [tailwind](https://tailwindcss.com/docs/width)
 
-#### 🖌️ Tailwind config has been implemented with this preset:
-
-```
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,,scss}'],
-  theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      mono: ['Fira Code'],
-    },
-    extend: {
-      colors: {
-        brand: {
-          dark: '#030826',
-          light: '#fffef3',
-          primary: '#F27141',
-          secondary: '#F28B30',
-          soft: '#F28D77',
-          accent: '#F24C27',
-        },
-        transparent: 'transparent',
-      },
-      backgroundImage: {
-        'effect-granula': "url('/effectgranula.png')",
-      },
-      minHeight: {
-        'screen-nav': 'calc(100vh - 5rem)',
-      },
-    },
-  },
-}
-```
-
 ## 🔦 Instructions for installing the boilerplate. <a name="getting_started">
 
 ```
