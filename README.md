@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=90px height=90px src="./public/logo_coqueirodigital.png" alt="logo"></a>
+ <img width=90px height=90px src="./public/logo.png" alt="logo"></a>
 </p>
 
 <h3 align="center">NEXTJS Boilerplate</h3>
@@ -38,5 +38,6 @@ npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
 Run
 
 ```
+npm install
 npm run dev
 ```

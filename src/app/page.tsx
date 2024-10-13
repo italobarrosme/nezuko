@@ -1,6 +1,6 @@
 import { Example } from '@/modules/example'
 import { cn } from '@/utils'
-import { Text } from '@coqueirodigital/react-components'
+import { Text } from '@developerskyi/react-components'
 
 export default async function Home() {
   async function exampleFetchData() {

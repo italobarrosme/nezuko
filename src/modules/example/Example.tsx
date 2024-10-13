@@ -5,7 +5,7 @@ import {
   InputNumber,
   Text,
   Toastify,
-} from '@coqueirodigital/react-components'
+} from '@developerskyi/react-components'
 
 export const Example = () => {
   const handleValue = (value: number | string) => {
@@ -15,7 +15,7 @@ export const Example = () => {
   return (
     <div className="flex max-w-5xl flex-col gap-4 text-primary-regular">
       <Text tag="h1" variant="md/bold">
-        Example components from @coqueirodigital/react-components
+        Example components from @developerskyi/react-components
       </Text>
 
       <Button
@@ -23,7 +23,7 @@ export const Example = () => {
         onClick={() =>
           Toastify({
             description:
-              'Test Toastify component from @coqueirodigital/react-components',
+              'Test Toastify component from @developerskyi/react-components',
             option: {
               autoClose: 5000,
               hideProgressBar: false,
