@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col items-center justify-center bg-neutral-dark bg-effect-granula p-4">
-        <ToastProvider>
+        <ToastProvider position={'bottom/right'}>
           <main>{children}</main>
         </ToastProvider>
       </body>
