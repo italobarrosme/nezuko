@@ -1,13 +1,25 @@
 'use client'
 
-import { ToastifyProvider } from '@developerskyi/react-components'
+import { Toaster } from '@developerskyi/react-components'
 import { ReactNode } from 'react'
 
-export const ToastProvider = ({ children }: { children: ReactNode }) => {
+type ToastProviderProps = {
+  children: ReactNode
+  position:
+    | 'bottom/center'
+    | 'bottom/left'
+    | 'bottom/right'
+    | 'top/center'
+    | 'top/left'
+    | 'top/right'
+    | undefined
+}
+
+export const ToastProvider = ({ children, position }: ToastProviderProps) => {
   return (
     <>
       {children}
-      <ToastifyProvider />
+      <Toaster position={position} />
     </>
   )
 }
