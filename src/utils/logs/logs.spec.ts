@@ -6,6 +6,8 @@ const consoleMock = vi.spyOn(console, 'log')
 describe('logs', () => {
   beforeEach(() => {
     vi.spyOn(global, 'Date').mockImplementation(() => mockDate)
+
+    vi.clearAllMocks()
   })
 
   it('should return success log', () => {
