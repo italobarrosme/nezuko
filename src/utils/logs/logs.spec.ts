@@ -8,6 +8,7 @@ describe('logs', () => {
     vi.spyOn(global, 'Date').mockImplementation(() => mockDate)
 
     vi.clearAllMocks()
+    vi.clearAllTimers()
   })
 
   it('should return success log', () => {
