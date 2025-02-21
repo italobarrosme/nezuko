@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Icon } from '@iconify/react'
-import { useRedirectTimeout } from '@/modules/shared/hooks/useRedirectTimeout'
+import { useRedirectTimeout } from '@/modules/common/hooks/useRedirectTimeout'
 
 const NotFound = () => {
   useRedirectTimeout(5000, '/')

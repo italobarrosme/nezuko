@@ -1,6 +1,4 @@
-import { Example } from '@/modules/example'
 import { cn } from '@/utils'
-import { Text } from '@developerskyi/react-components'
 
 export default async function Home() {
   async function exampleFetchData() {
@@ -18,14 +16,9 @@ export default async function Home() {
   return (
     <>
       <section className="flex max-w-5xl flex-col gap-16 text-primary-regular">
-        <Text tag="h1" variant="3xl/bold">
-          Hello World
-        </Text>
-        <Example />
+        <h1 className="text-2xl font-bold">Hello World</h1>
         <div>
-          <Text tag="h2" variant="2xl/bold">
-            Example Data from API
-          </Text>
+          <h2 className="text-2xl font-bold">Example Data from API</h2>
           <ul>
             {data.map((item: any, index: number) => (
               <li key={item.id} className={cn('text-primary-regular')}>

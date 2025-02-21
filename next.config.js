@@ -9,12 +9,6 @@ const withPWA = require('next-pwa')({
 const nextConfig = {
   ...withPWA,
   reactStrictMode: true,
-  publicRuntimeConfig: {
-    API_URL: process.env.API_URL,
-    JWT_SECRET: process.env.JWT_SECRET,
-    NEXTAUTH_URL: process.env.NEXTAUTH_URL,
-    staticFolder: '/static',
-  },
   images: {
     remotePatterns: [
       {

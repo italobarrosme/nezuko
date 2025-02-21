@@ -3,7 +3,7 @@
  <img width=90px height=90px src="./public/logo.png" alt="logo"></a>
 </p>
 
-<h3 align="center">NEXTJS Boilerplate</h3>
+<h3 align="center">NEXTJS 14.2.24Boilerplate</h3>
 
 ## 📝 Table of Contents
 
@@ -17,7 +17,7 @@
 - For storage, [zustend](https://next-auth.js.org/) is used, with the "loading" component as an example of usage.
 - Prettier eslint and lintstaged for organization code
 
-- Husky has also been implemented for:
+- Lefthook has also been implemented for:
   Commitlint
   Pre-commit with lint-staged and Prettier
   Pre-push running lint-staged tests and build
