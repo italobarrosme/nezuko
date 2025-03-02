@@ -53,7 +53,7 @@
 To create a new project using this boilerplate:
 
 ```bash
-npx create-next-app@latest -e https://github.com/italobarrosme/nezuko
+npx create-next-app@14.2.24 -e https://github.com/italobarrosme/nezuko
 ```
 
 To run the project:
