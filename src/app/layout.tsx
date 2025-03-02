@@ -1,4 +1,4 @@
-import '@/globals.css'
+import '@/styles/globals.css'
 
 import { ReactNode } from 'react'
 import { Metadata } from 'next'
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col items-center justify-center bg-neutral-dark bg-effect-granula p-4">
+      <body className="flex min-h-screen flex-col items-center justify-center bg-neutral-dark bg-effect-granula p-4 text-neutral-white">
         <main>{children}</main>
       </body>
     </html>

@@ -6,16 +6,11 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "testing.automaticallyOpenPeekView": "never",
-  "tailwindCSS.experimental.configFile": "src/styles/app.css",
   "tailwindCSS.classAttributes": [
     "class",
-    "styleClass",
-    "enter",
-    "enterFrom",
-    "enterTo",
-    "leave",
-    "leaveFrom",
-    "leaveTo"
-  ]
+    "className",
+    ".Styles",
+    ".*Classes.*"
+  ],
+  "tailwindCSS.experimental.classRegex": ["clsx\\([\"']([\\s\\S]*?)[\"']\\)"]
 }
